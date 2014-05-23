@@ -24,6 +24,33 @@
 		fieldset{
 			padding-top: 50px;
 		}
+		
+		h2 {
+			font-family:arial;
+		}
+
+		form {
+			display: inline-block;
+		}
+
+		#button{
+			display: inline-block;
+			font-family:arial;
+			font-weight:bold;
+			color:#ffffff;
+			border-radius: 5px;
+			text-align:center;
+			margin-top:2px;
+		}
+		#parteDaRemocao{
+			padding-top: 60px;
+		}
+
+		.list {
+			font-family:garamond;
+			color:#2B60DE;
+			padding-top: 30px;
+		}
 
 		
 		
@@ -48,7 +75,7 @@
 				<ul class="nav navbar-nav">
 					<li><a href="index.html">Home</a></li>
 					<li><a href="matricula.html">Matrícula</a></li>
-					<li  class="active"><a href="lista.html">Lista de interesse</a></li>				
+					<li  class="active"><a href="lista.html">Assuntos de interesse</a></li>				
 				</ul>
 				</div><!--/.nav-collapse -->
 			</div>
@@ -56,31 +83,41 @@
     
 		<div class="container">
 			<div class = "lead">
-				<form>
+			
+			<h3>Adicione um assunto que você gostaria
+			de aprender.</h3>
+			<form name="lista_de_interesses">
+				<input type="text" name="interesses" placeholder= "Digite um interesse"/>
+			</form>
+			<div id="button" class="btn btn-lg btn-primary">Add!</div>
+			<br/>
+			
+			<h3 id = "parteDaRemocao">Clique em cima do nome do assunto que você
+			já aprendeu para remove-lo.</h3>
+			<div class="list"></div>
+			
+<!-- 			<form>				
+				<fieldset>					 
+					<select name="selectfrom" id="select-from" multiple size="7">
+					  <option value="1">Item 1</option>
+					  <option value="2">Item 2</option>
+					  <option value="3">Item 3</option>
+					  <option value="4">Item 4</option>
+					  <option value="5">Item 5</option>
+					  <option value="6">Item 6</option>
+					  <option value="7">Item 7</option>
+					</select>
+
+					<a href="JavaScript:void(0);" id="btn-add">Add &raquo;</a>
+					<a href="JavaScript:void(0);" id="btn-remove">&laquo; Remove</a>
+
+					<select name="selectto" id="select-to" multiple size="7">
+					</select>
+
+				</fieldset>
+				</form>
 				
-					<input id="interesse" type="text" placeholder="Adicione um interesse">
-					  
-					<fieldset>					 
-						<select name="selectfrom" id="select-from" multiple size="7">
-						  <option value="1">Item 1</option>
-						  <option value="2">Item 2</option>
-						  <option value="3">Item 3</option>
-						  <option value="4">Item 4</option>
-						  <option value="5">Item 5</option>
-						  <option value="6">Item 6</option>
-						  <option value="7">Item 7</option>
-						</select>
-
-						<a href="JavaScript:void(0);" id="btn-add">Add &raquo;</a>
-						<a href="JavaScript:void(0);" id="btn-remove">&laquo; Remove</a>
-
-						<select name="selectto" id="select-to" multiple size="7">
-						</select>
-
-					</fieldset>
-					</form>
-					
-					
+ -->					
 			</div>
 			
 			<!-- /END THE FEATURETTES -->
